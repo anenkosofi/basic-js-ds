@@ -35,7 +35,7 @@ class Queue {
 
   dequeue() {
     if (!this.head) {
-      throw new NotImplementedError("Queue is empty");
+      throw new Error("Queue is empty");
     }
 
     const value = this.head.value;
